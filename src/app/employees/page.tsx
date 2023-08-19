@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import Sidebar from '../components/sidebar'
-import Header from '../components/header'
+import Sidebar from '../components/Sidebar'
+import Header from '../components/Header'
 
 export default function Employees() {
   return (
