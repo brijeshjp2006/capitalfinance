@@ -3,7 +3,7 @@ import React from 'react'
 export default function page() {
   return (
     <div>
-      <h1>Leader board page</h1>
+      <h1>Leader board page gg</h1>
     </div>
   )
 }
