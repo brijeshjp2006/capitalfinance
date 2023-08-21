@@ -3,7 +3,7 @@ const db = mysql({
   config: {
     host: "199.79.63.39",
     database: "theproje_reactapi",
-    user: "theproje_react",
+    user: "theproje_reactapi",
     password: "react@9#",
   }
 });
