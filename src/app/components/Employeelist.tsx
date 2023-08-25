@@ -8,9 +8,7 @@ import DataTable from 'react-data-table-component'
 
 function Employeelist() {
   const [employees,setEmployees]=useState([]);
-  const [search,setSearch]=useState("");
-  const [filterdEmployees,setfilterdEmployees]=useState([]);
-
+ 
   const customStyles = {
       rows: {
           style: {
@@ -46,7 +44,7 @@ function Employeelist() {
 const columns=[
   {
       name: "Name ",      
-    selector : (row)=>row.fname,      
+    selector : (row: any)=>row.fname,      
       sortable : true,
       width:"27%",
       class:"hellobar"
