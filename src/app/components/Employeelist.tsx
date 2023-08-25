@@ -46,7 +46,7 @@ function Employeelist() {
 const columns=[
   {
       name: "Name ",
-      selector : (row: any)=><><div className='firstcol'>
+      cell : (row: any)=><><div className='firstcol'>
       <Image src="/images/user-icon.png" alt="text" width={36} height={36} />
        <h6> {row.fname} {row.lname}</h6>
         <span>{row.PrimaryCompany}</span>
@@ -105,7 +105,6 @@ responsive
 pagination 
 subHeader 
 customStyles={customStyles}
- subHeaderAlign="right"
 />
         
     </>
