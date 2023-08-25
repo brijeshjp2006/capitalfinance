@@ -34,7 +34,7 @@ function Employeelist() {
 
   useEffect(()=>{
     async function getEmployeeData(){
-    const apiUrlEndpoint="http://localhost:3000/api/employeedata";
+    const apiUrlEndpoint="https://capitalfinance.vercel.app/api/employeedata";
     const response=await fetch(apiUrlEndpoint)
     const res= await response.json();
     console.log(res.data);
