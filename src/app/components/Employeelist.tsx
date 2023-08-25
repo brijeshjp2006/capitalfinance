@@ -8,7 +8,9 @@ import DataTable from 'react-data-table-component'
 
 function Employeelist() {
   const [employees,setEmployees]=useState([]);
- 
+  const [search,setSearch]=useState("");
+  const [filterdEmployees,setfilterdEmployees]=useState([]);
+
   const customStyles = {
       rows: {
           style: {
@@ -43,8 +45,14 @@ function Employeelist() {
 
 const columns=[
   {
-      name: "Name ",      
-    selector : (row: any)=>row.fname,      
+      name: "Name ",
+      selector : (row: any)=><><div className='firstcol'>
+      <Image src="/images/user-icon.png" alt="text" width={36} height={36} />
+       <h6> {row.fname} {row.lname}</h6>
+        <span>{row.PrimaryCompany}</span>
+        </div>
+        </>,
+      
       sortable : true,
       width:"27%",
       class:"hellobar"
@@ -52,28 +60,28 @@ const columns=[
   },
   {
       name: "Primary Company ",
-      selector : (row)=>row.PrimaryCompany
+      selector : (row: any)=>row.PrimaryCompany
    
   },
   {
       name: "Primary Station",
-      selector : (row)=>row.PrimaryStation
+      selector : (row: any)=>row.PrimaryStation
    
   },
   {
       name: "FedEx ID",
-      selector : (row)=>row.FedExID
+      selector : (row: any)=>row.FedExID
    
   },
   {
       name: "Employee ID",
-      selector : (row)=>row.EmployeeID
+      selector : (row: any)=>row.EmployeeID
    
   },
   
   {
       name: "Pay Adjustment",
-      selector : (row)=>row.PayAdjustment
+      selector : (row: any)=>row.PayAdjustment
    
   },
   {
