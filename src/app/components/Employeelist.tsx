@@ -86,7 +86,7 @@ const columns=[
   },
   {
       name: "Action",
-      cell: row=><button type="button" className="employees-edit" data-bs-toggle="modal" data-bs-target="#exampleModal"><Image src="/images/edit-icon.png" alt="text" width={20} height={20} /></button>
+      cell: (row: any)=><button type="button" className="employees-edit" data-bs-toggle="modal" data-bs-target="#exampleModal"><Image src="/images/edit-icon.png" alt="text" width={20} height={20} /></button>
      
    
   }
