@@ -46,7 +46,7 @@ function Employeelist() {
 const columns=[
   {
       name: "Name ",
-      cell: row=><>
+      cell: (row)=><>
       <div className='firstcol'>
       <Image src="/images/user-icon.png" alt="text" width={36} height={36} />
        <h6> {row.fname} {row.lname}</h6>
