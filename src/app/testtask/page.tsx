@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 
-function page() {
+function Page() {
 
   
   const [valt, setValt]=useState<string | undefined>();
@@ -20,4 +20,4 @@ setValt(e.target.value)
   )
 }
 
-export default page
+export default Page
